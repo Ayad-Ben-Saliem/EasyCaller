@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:layout_editor_absoluteX="8dp"
+    tools:layout_editor_absoluteY="8dp">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/showDeleteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/ic_remove_circle_black_24dp" />
+
+    <android.support.v7.widget.AppCompatAutoCompleteTextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:background="@android:color/transparent"
+        android:text="Phone"
+        android:textColor="@color/CYAN" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/ic_chevron_right_black_24dp" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/phoneNumberET"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:hint="0912345678"
+        android:inputType="phone"
+        android:maxLines="1" />
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/deleteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="2dp"
+        android:background="@color/RED"
+        android:text="Delete"
+        android:visibility="gone" />
+
+</LinearLayout>
